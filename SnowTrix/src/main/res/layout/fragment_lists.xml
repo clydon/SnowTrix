@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/snowtrix1"
+    tools:context="com.lydonc.snowtrix.MainActivity$PlaceholderFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:id="@+id/NumberPad">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NumberRow123"
+            android:layout_weight="1">
+
+            <!--<com.lydonc.trickdice.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:text="STANCE"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="primary"
+                bootstrapbutton:bb_size="small"
+                android:id="@+id/buttonStance"
+                android:layout_weight="3" />-->
+
+            <com.lydonc.snowtrix.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:text="DIRECTION"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_size="small"
+                android:id="@+id/buttonDirection"
+                android:layout_weight="3"
+                />
+
+            <com.lydonc.snowtrix.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:text="SPIN"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="warning"
+                bootstrapbutton:bb_size="small"
+                android:id="@+id/buttonSpin"
+                android:layout_weight="3" />
+
+            <com.lydonc.snowtrix.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="1dp"
+                android:text="GRAB"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="danger"
+                bootstrapbutton:bb_size="small"
+                android:id="@+id/buttonGrab"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:id="@+id/trickListView"
+            android:layout_weight="2.85" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--<com.lydonc.trickdice.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_below="@+id/trickListView"
+                android:text="Select Trick List"
+                bootstrapbutton:bb_text_gravity="center"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="primary"
+                android:id="@+id/buttonSelectList"
+                android:layout_weight="2"
+                />-->
+            <com.lydonc.snowtrix.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_below="@+id/trickListView"
+                android:text="Add Trick"
+                bootstrapbutton:bb_text_gravity="center"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_type="primary"
+                android:id="@+id/buttonAddTrick"
+                android:layout_weight="5"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

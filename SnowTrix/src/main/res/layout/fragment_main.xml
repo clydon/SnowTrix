@@ -1,0 +1,170 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/snowtrix"
+    tools:context="com.lydonc.snowtrix.MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="26dp"
+        android:id="@+id/linearLayout">
+
+        <!--<kankan.wheel.widget.WheelView android:id="@+id/wheelStance"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>-->
+        <kankan.wheel.widget.WheelView android:id="@+id/wheelDirection"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        <kankan.wheel.widget.WheelView android:id="@+id/wheelSpin"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <kankan.wheel.widget.WheelView android:id="@+id/wheelGrab"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="19dp"
+        android:paddingRight="22dp"
+        android:layout_below="@+id/linearLayout"
+        android:id="@+id/linearLayout1">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textOff="HOLD"
+            android:textOn="HOLD"
+            android:id="@+id/toggleButton"
+            android:layout_below="@+id/switchStance"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textOff="HOLD"
+            android:textOn="HOLD"
+            android:id="@+id/toggleButton2"
+            android:layout_below="@+id/switchStance"
+            android:layout_toRightOf="@+id/toggleButton" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textOff="HOLD"
+            android:textOn="HOLD"
+            android:id="@+id/toggleButton3"
+            android:layout_below="@+id/switchStance"
+            android:layout_toRightOf="@+id/toggleButton2" />
+    </LinearLayout>
+
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="Switch Tricks Disabled"
+        android:textOn="Switch Tricks Enabled"
+        android:id="@+id/toggleButton4"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="22dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/toggleButton4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mainText"
+            android:id="@+id/textView"
+            android:textColor="#ff171a1b"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="60dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <ToggleButton
+        android:id="@+id/facebookToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff=" Logged Out"
+        android:textOn=" Signed In"
+        android:textSize="10dp"
+        android:textColor="#ff313131"
+        android:button="@drawable/check"
+        android:background="@null"
+        android:layout_gravity="bottom|left" />
+
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"/>
+</FrameLayout>

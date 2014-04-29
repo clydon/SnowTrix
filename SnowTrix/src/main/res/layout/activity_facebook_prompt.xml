@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical|center_horizontal">
+
+    <TableLayout
+        android:id="@+id/tableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/table_round_shape">
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:weightSum = "4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="In order for you to save and load your own custom Trick List, you must login with Facebook"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#999"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:text="You will only have to do this once"
+                android:layout_gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/buttonLogin"
+            android:layout_alignParentStart="false"
+            android:textColor="#fff"
+            android:background="@drawable/button_login"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="skip login"
+            android:textColor="#ff646464"
+            android:layout_below="@+id/buttonLogin"
+            android:id="@+id/buttonSkipLogin"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
