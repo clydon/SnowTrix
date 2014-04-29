@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SnowTrix.iml" filepath="$PROJECT_DIR$/SnowTrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SnowTrix/SnowTrix-SnowTrix.iml" filepath="$PROJECT_DIR$/SnowTrix/SnowTrix-SnowTrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SnowTrixApp.iml" filepath="$PROJECT_DIR$/SnowTrixApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/facebook/facebook.iml" filepath="$PROJECT_DIR$/libs/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheel/wheel.iml" filepath="$PROJECT_DIR$/wheel/wheel.iml" />
+    </modules>
+  </component>
+</project>
+
